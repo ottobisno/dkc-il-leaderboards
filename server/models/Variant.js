@@ -1,18 +1,19 @@
 import { Schema, model } from 'mongoose';
 
+// Schema to create Variant model for each stage
 const variantSchema = new Schema({
   name: {
     type: String,
-    required: true
+    default: 'Standard'
   },
   ILs: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'il'
+      ref: 'IL'
     }
   ]
 });
 
-const Variant = model('Varient', variantSchema);
+const Variant = model('Variant', variantSchema);
 
 module.exports = Variant;

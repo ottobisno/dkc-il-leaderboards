@@ -13,7 +13,7 @@ const gameSchema = new Schema({
   categories: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'category'
+      ref: 'Category'
     }
   ]
 });

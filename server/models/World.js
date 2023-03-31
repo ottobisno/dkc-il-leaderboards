@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose';
 
+// Schema to create World model
 const worldSchema = new Schema({
   name: {
     type: String,
@@ -12,7 +13,7 @@ const worldSchema = new Schema({
   stages: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'stage'
+      ref: 'Stage'
     }
   ]
 });

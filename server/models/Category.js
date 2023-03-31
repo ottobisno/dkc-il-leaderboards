@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose';
 
+// Schema to create Category model
 const categorySchema = new Schema({
   name: {
     type: String,
@@ -8,7 +9,7 @@ const categorySchema = new Schema({
   worlds: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'world'
+      ref: 'World'
     }
   ]
 });
